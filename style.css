@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    font-family: cursive;
+    background-color: darkgray;
+
+}
+
+#forca {
+    height: 500px;
+}
+
+.plv {
+    margin: 10px 5px;
+    width: 8px;
+    color: white;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Forca</h1>
+    </header>
+    <main>
+        <div>
+            <label for="">Quantas letras?</label>
+            <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div>           
+            PALAVRA: 
+            <input class="plv" type="text" name="l1" id="l1" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l2" id="l2" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l3" id="l3" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l4" id="l4" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l5" id="l5" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l6" id="l6" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l7" id="l7" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l8" id="l8" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l9" id="l9" maxlength="1" size="1"> - 
+            <input class="plv" type="text" name="l10" id="l10" maxlength="1" size="1">
+        </div>
+        <div></div>
+        <div>
+            <label for="dica">Dica:</label>
+            <input type="text" name="dica" id="dica">
+        </div>
+        <img id="forca" src="imagens/f.png" alt="">
+        <p>
+            <input type="text" name="letra" id="letra" placeholder="Digite uma letra" maxlength="1">
+            <input type="button" value="Jogar" onclick="jogar()">
+        </p>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
