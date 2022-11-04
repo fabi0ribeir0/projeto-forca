@@ -11,6 +11,7 @@ body {
 }
 
 .plv {
+    display: none;
     margin: 10px 5px;
     width: 8px;
     color: white;

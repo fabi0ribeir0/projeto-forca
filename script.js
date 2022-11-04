@@ -1,5 +1,151 @@
 var erro = 0
 
+function selecionar() {
+    var c1 = document.getElementById('l1')
+    var c2 = document.getElementById('l2')
+    var c3 = document.getElementById('l3')
+    var c4 = document.getElementById('l4')
+    var c5 = document.getElementById('l5')
+    var c6 = document.getElementById('l6')
+    var c7 = document.getElementById('l7')
+    var c8 = document.getElementById('l8')
+    var c9 = document.getElementById('l9')
+    var c10 = document.getElementById('l10')
+    var x = document.getElementById("opcao").value;
+    
+    switch (Number(x)) {
+        case 1:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'none'
+            c3.style.display = 'none'
+            c4.style.display = 'none'
+            c5.style.display = 'none'
+            c6.style.display = 'none'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break
+        
+        case 2:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'none'
+            c4.style.display = 'none'
+            c5.style.display = 'none'
+            c6.style.display = 'none'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break
+
+        case 3:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'none'
+            c5.style.display = 'none'
+            c6.style.display = 'none'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break
+            
+        case 4:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'none'
+            c6.style.display = 'none'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break
+            
+        case 5:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'none'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break
+            
+        case 6:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'inline-block'
+            c7.style.display = 'none'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break 
+
+        case 7:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'inline-block'
+            c7.style.display = 'inline-block'
+            c8.style.display = 'none'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break 
+
+        case 8:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'inline-block'
+            c7.style.display = 'inline-block'
+            c8.style.display = 'inline-block'
+            c9.style.display = 'none'
+            c10.style.display = 'none'
+            break 
+
+        case 9:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'inline-block'
+            c7.style.display = 'inline-block'
+            c8.style.display = 'inline-block'
+            c9.style.display = 'inline-block'
+            c10.style.display = 'none'
+            break 
+
+        case 10:
+            c1.style.display = 'inline-block'
+            c2.style.display = 'inline-block'
+            c3.style.display = 'inline-block'
+            c4.style.display = 'inline-block'
+            c5.style.display = 'inline-block'
+            c6.style.display = 'inline-block'
+            c7.style.display = 'inline-block'
+            c8.style.display = 'inline-block'
+            c9.style.display = 'inline-block'
+            c10.style.display = 'inline-block'
+            break 
+    }
+}
+
 function jogar() {
     var c1 = document.getElementById('l1')
     var l1 = c1.value
@@ -64,22 +210,22 @@ function jogar() {
         switch (Number(erro)) {
             case 1 : 
                 img.src = 'imagens/mf1.png'
-                breake
+                break
             case 2 :
                 img.src = 'imagens/mf2.png'
-                breake
+                break
             case 3 : 
                 img.src = 'imagens/mf3.png'
-                breake
+                break
             case 4 :
                 img.src = 'imagens/mf4.png'
-                breake
+                break
             case 5 :
                 img.src = 'imagens/mf5.png'
-                breake
+                break
             case 6 :
                 img.src = 'imagens/mf6.png'
-                breake
+                break
             default :
             alert(`Perdeu!!! A palavra era: ${l1}${l2}${l3}${l4}${l5}${l6}${l7}${l8}${l9}${l10}`)
             window.location.href = "pg2.html"
