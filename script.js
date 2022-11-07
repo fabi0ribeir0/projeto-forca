@@ -1,17 +1,18 @@
 var erro = 0
+var c1 = document.getElementById('l1')
+var c2 = document.getElementById('l2')
+var c3 = document.getElementById('l3')
+var c4 = document.getElementById('l4')
+var c5 = document.getElementById('l5')
+var c6 = document.getElementById('l6')
+var c7 = document.getElementById('l7')
+var c8 = document.getElementById('l8')
+var c9 = document.getElementById('l9')
+var c10 = document.getElementById('l10')
 
 function selecionar() {
-    var c1 = document.getElementById('l1')
-    var c2 = document.getElementById('l2')
-    var c3 = document.getElementById('l3')
-    var c4 = document.getElementById('l4')
-    var c5 = document.getElementById('l5')
-    var c6 = document.getElementById('l6')
-    var c7 = document.getElementById('l7')
-    var c8 = document.getElementById('l8')
-    var c9 = document.getElementById('l9')
-    var c10 = document.getElementById('l10')
     var x = document.getElementById("opcao").value;
+
     
     switch (Number(x)) {
         case 1:
@@ -170,6 +171,9 @@ function jogar() {
     var testl = document.getElementById('letra')
     var tl = testl.value
     var img = document.getElementById('forca')
+
+    testl.value = ''
+    testl.focus()
  
     if (tl == l1 || tl == l2 || tl == l3 || tl == l4 || tl == l5 || tl == l6 || tl == l7 || tl == l8 || tl == l9 || tl == l10) {
         if (tl == l1 && c1.style.color != 'black') {
