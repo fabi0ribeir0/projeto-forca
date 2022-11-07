@@ -10,7 +10,7 @@ var c8 = document.getElementById('l8')
 var c9 = document.getElementById('l9')
 var c10 = document.getElementById('l10')
 
-function selecionar() {
+function selecionar() {    
     var x = document.getElementById("opcao").value;
 
     
@@ -237,4 +237,73 @@ function jogar() {
         
     } 
     
+    var x = document.getElementById("opcao").value;
+
+    switch (Number(x)) {
+        case 1 :
+            if (c1.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 2 :
+            if (c1.style.color == 'black' && c2.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 3 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 4 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 5 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 6 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black' && c6.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 7 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black' && c6.style.color == 'black' && c7.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 8 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black' && c6.style.color == 'black' && c7.style.color == 'black' && c8.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 9 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black' && c6.style.color == 'black' && c7.style.color == 'black' && c8.style.color == 'black' && c9.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+        case 10 :
+            if (c1.style.color == 'black' && c2.style.color == 'black' && c3.style.color == 'black' && c4.style.color == 'black' && c5.style.color == 'black' && c6.style.color == 'black' && c7.style.color == 'black' && c8.style.color == 'black' && c9.style.color == 'black' && c10.style.color == 'black') {
+                alert('Ganhou!')
+                window.location.href = "pg3.html"
+            }
+            break
+    }
+
+}
+
+function restart() {
+    window.location.reload(true);
 }

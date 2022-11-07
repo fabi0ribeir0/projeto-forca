@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perdeu</title>
+    <title>Venceu</title>
     <style>
         body {
             background-color: rgba(0, 0, 0, 0.699);
@@ -15,9 +15,15 @@
             margin-top: 20px;
         }
 
-        #img1 {
+        
+        #img1, #img2{
             margin: auto;
             text-align: center;
+        }
+
+        #win {
+            width: 350px;
+            height: 350px;
         }
 
         #mario {
@@ -38,10 +44,13 @@
 </head>
 <body>
     <div id="img1">
-        <img id="mario" src="imagens/game-over.gif" alt="">
+        <img id="win" src="imagens/win.gif" alt="">
+    </div>
+    <div id="img2">
+        <img id="mario" src="imagens/mario-win.gif" alt="">
     </div>
     <div id="link">
-        <a href="index.html">Voltar</a>
+        <a href="index.html"><strong>Voltar</strong></a>
     </div>
 </body>
 </html>
