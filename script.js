@@ -1,14 +1,8 @@
 var erro = 0
-var c1 = document.getElementById('l1')
-var c2 = document.getElementById('l2')
-var c3 = document.getElementById('l3')
-var c4 = document.getElementById('l4')
-var c5 = document.getElementById('l5')
-var c6 = document.getElementById('l6')
-var c7 = document.getElementById('l7')
-var c8 = document.getElementById('l8')
-var c9 = document.getElementById('l9')
-var c10 = document.getElementById('l10')
+var caixas = document.getElementsByClassName('caixa');
+for (var i = 0; i < caixas.length; i++) {
+    caixas[i].style.display = 'none';
+}
 
 function selecionar() {    
     var x = document.getElementById("opcao").value;
@@ -16,135 +10,23 @@ function selecionar() {
     
     switch (Number(x)) {
         case 1:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'none'
-            c3.style.display = 'none'
-            c4.style.display = 'none'
-            c5.style.display = 'none'
-            c6.style.display = 'none'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break
-        
         case 2:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'none'
-            c4.style.display = 'none'
-            c5.style.display = 'none'
-            c6.style.display = 'none'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break
-
         case 3:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'none'
-            c5.style.display = 'none'
-            c6.style.display = 'none'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break
-            
         case 4:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'none'
-            c6.style.display = 'none'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break
-            
         case 5:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'none'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break
-            
         case 6:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'inline-block'
-            c7.style.display = 'none'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break 
-
         case 7:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'inline-block'
-            c7.style.display = 'inline-block'
-            c8.style.display = 'none'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break 
-
-        case 8:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'inline-block'
-            c7.style.display = 'inline-block'
-            c8.style.display = 'inline-block'
-            c9.style.display = 'none'
-            c10.style.display = 'none'
-            break 
-
+        case 8: 
         case 9:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'inline-block'
-            c7.style.display = 'inline-block'
-            c8.style.display = 'inline-block'
-            c9.style.display = 'inline-block'
-            c10.style.display = 'none'
-            break 
-
         case 10:
-            c1.style.display = 'inline-block'
-            c2.style.display = 'inline-block'
-            c3.style.display = 'inline-block'
-            c4.style.display = 'inline-block'
-            c5.style.display = 'inline-block'
-            c6.style.display = 'inline-block'
-            c7.style.display = 'inline-block'
-            c8.style.display = 'inline-block'
-            c9.style.display = 'inline-block'
-            c10.style.display = 'inline-block'
-            break 
-    }
+            for (var i = 0; i < x; i++) {
+                document.getElementById('l' + (i + 1)).style.display = 'inline-block';
+            }
+            for (var i = x; i < 10; i++) {
+                document.getElementById('l' + (i + 1)).style.display = 'none';
+            }
+            break;
+            }
 }
 
 function jogar() {
